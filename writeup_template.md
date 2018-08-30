@@ -113,20 +113,20 @@ My final model results were:
 * validation set accuracy of 94.9
 * test set accuracy of 93.3%
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
+If an iterative approach was chosen:  
+* What was the first architecture that was tried and why was it chosen?  
 Firstly, I tried the exact same architecture which we saw in LeNet course. My purpose of choosing this was to try what accuracy would I get without any modifications. By this way, I got around 89 percent accuracy in validation set.
 
-* What were some problems with the initial architecture?
+* What were some problems with the initial architecture?  
 In current architecture I didn't see any issues but it was basically not enough for getting good enough percentage in accuracy. After doing some research and revisiting the courses I decided to use dropout right after the two fully connected layers and re-runned the training process. This way with grayscale, normalization and adding more data I got 94.9 percent of accuracy in validation set.
 
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.  
 I choosed to add two layers of dropout with 0.5 of keep probability which helped me to increase my validation data set percentage to 94.9 percent. 
 
-* Which parameters were tuned? How were they adjusted and why?
+* Which parameters were tuned? How were they adjusted and why?  
 I didn't adjust any parameters in my architecture.
 
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?  
 Convolution layer works well with images, 3x3 or 5x5 filters do computations in small pieces of the image and keep sliding until it covers all of the image. this way our network can focus on details, edges, curves of the image and produce output regarding to this to be an input to our next layer.
 
 Dropout with 0.5 keep probability drops out half of the training set and may result our network to learn more robust features by letting it focus on random features this way in my case validation accuracy increased. In addition to this, dropout also prevents over-fitting.
