@@ -22,6 +22,7 @@ The goals / steps of this project are the following:
 [random]: ./writeup_images/random-images.png "Random Images"
 [random2]: ./writeup_images/random-images2.png "Random Images"
 [testimg]: ./writeup_images/test-images.png "Test Images"
+[modified]: ./writeup_images/rotated-and-scaled.png "Rotated And Scaled Images"
 [hist]: ./writeup_images/horizontal-hist.png "Histogram Visualization"
 
 ## Rubric Points
@@ -72,7 +73,7 @@ To add more data to the the dataset, I used the rotation and scaling techniques 
 
 Here is an example of an original image and an augmented image:
 
-![alt text][image3]
+![alt text][modified]
 
 The difference between the original data set and the augmented data set is around 2580 amount of images.  
 
