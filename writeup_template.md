@@ -99,8 +99,6 @@ My final model consisted of the following layers:
 | RELU					|												|
 | DROPOUT				| 0.5 keep probability							|
 | Fully connected		| 84, outputs 43								|
-|						|												|
-|						|												|
  
 
 
@@ -167,85 +165,85 @@ The code for making predictions on my final model is located in the 11th cell of
 
 As it can be seen from the results below the predictions for the picked images were pretty accurate.
 
-Original Image:  Stop
-Predictions: 
-  0.99998354911804199219% - Stop
-  0.00001205563239636831% - Keep right
-  0.00000275256638815335% - Turn left ahead
-  0.00000049292839321424% - Yield
-  0.00000048047490963654% - Speed limit (30km/h)
+Original Image:  Stop  
+Predictions:  
+  0.99998354911804199219% - Stop  
+  0.00001205563239636831% - Keep right  
+  0.00000275256638815335% - Turn left ahead  
+  0.00000049292839321424% - Yield  
+  0.00000048047490963654% - Speed limit (30km/h)  
+  
+Original Image:  No entry  
+Predictions:   
+  0.99964046478271484375% - No entry  
+  0.00033540723961777985% - Stop  
+  0.00001728532697597984% - Keep right  
+  0.00000680716766510159% - Speed limit (30km/h)  
+  0.00000004669956155112% - Turn left ahead  
+  
+Original Image:  Yield  
+Predictions:   
+  1.00000000000000000000% - Yield  
+  0.00000000000000005654% - No vehicles  
+  0.00000000000000000850% - Priority road  
+  0.00000000000000000032% - Ahead only  
+  0.00000000000000000003% - Road work  
+  
+Original Image:  No entry   
+Predictions:   
+  1.00000000000000000000% - No entry  
+  0.00000003830985662034% - Stop  
+  0.00000000422651913468% - Speed limit (30km/h)  
+  0.00000000018174833860% - Keep right  
+  0.00000000001740516932% - Priority road  
+  
+Original Image:  Keep right  
+Predictions:   
+  1.00000000000000000000% - Keep right  
+  0.00000000000000017106% - Dangerous curve to the right  
+  0.00000000000000001143% - Traffic signals  
+  0.00000000000000000075% - Turn left ahead  
+  0.00000000000000000002% - General caution  
 
-Original Image:  No entry
-Predictions: 
-  0.99964046478271484375% - No entry
-  0.00033540723961777985% - Stop
-  0.00001728532697597984% - Keep right
-  0.00000680716766510159% - Speed limit (30km/h)
-  0.00000004669956155112% - Turn left ahead
+Original Image:  Children crossing  
+Predictions:   
+  1.00000000000000000000% - Children crossing  
+  0.00000000000724487831% - Dangerous curve to the right  
+  0.00000000000025738900% - Go straight or right  
+  0.00000000000000187509% - End of no passing  
+  0.00000000000000099337% - Slippery road  
 
-Original Image:  Yield
-Predictions: 
-  1.00000000000000000000% - Yield
-  0.00000000000000005654% - No vehicles
-  0.00000000000000000850% - Priority road
-  0.00000000000000000032% - Ahead only
-  0.00000000000000000003% - Road work
-
-Original Image:  No entry
-Predictions: 
-  1.00000000000000000000% - No entry
-  0.00000003830985662034% - Stop
-  0.00000000422651913468% - Speed limit (30km/h)
-  0.00000000018174833860% - Keep right
-  0.00000000001740516932% - Priority road
-
-Original Image:  Keep right
-Predictions: 
-  1.00000000000000000000% - Keep right
-  0.00000000000000017106% - Dangerous curve to the right
-  0.00000000000000001143% - Traffic signals
-  0.00000000000000000075% - Turn left ahead
-  0.00000000000000000002% - General caution
-
-Original Image:  Children crossing
-Predictions: 
-  1.00000000000000000000% - Children crossing
-  0.00000000000724487831% - Dangerous curve to the right
-  0.00000000000025738900% - Go straight or right
-  0.00000000000000187509% - End of no passing
-  0.00000000000000099337% - Slippery road
-
-Original Image:  General caution
-Predictions: 
-  0.99999952316284179688% - General caution
-  0.00000042827747392948% - Traffic signals
-  0.00000000001601610858% - Pedestrians
-  0.00000000000007258879% - Go straight or left
-  0.00000000000000330775% - Roundabout mandatory
-
-Original Image:  Children crossing
-Predictions: 
-  0.98498904705047607422% - Children crossing
-  0.01449771691113710403% - Slippery road
-  0.00029708424699492753% - Dangerous curve to the right
-  0.00021184467186685652% - Bicycles crossing
-  0.00000338463223670260% - Road narrows on the right
-
-Original Image:  Right-of-way at the next intersection
-Predictions: 
-  0.97354954481124877930% - Right-of-way at the next intersection
-  0.02588187716901302338% - Beware of ice/snow
-  0.00051246094517409801% - Pedestrians
-  0.00002032580778177362% - General caution
-  0.00001693003468972165% - Double curve
-
-Original Image:  Keep right
-Predictions: 
-  0.99699676036834716797% - Keep right
-  0.00299559161067008972% - Go straight or left
-  0.00000392966103390791% - General caution
-  0.00000322310211231525% - Stop
-  0.00000026217270487905% - No entry
+Original Image:  General caution  
+Predictions:   
+  0.99999952316284179688% - General caution  
+  0.00000042827747392948% - Traffic signals  
+  0.00000000001601610858% - Pedestrians  
+  0.00000000000007258879% - Go straight or left  
+  0.00000000000000330775% - Roundabout mandatory  
+  
+Original Image:  Children crossing  
+Predictions:   
+  0.98498904705047607422% - Children crossing  
+  0.01449771691113710403% - Slippery road  
+  0.00029708424699492753% - Dangerous curve to the right  
+  0.00021184467186685652% - Bicycles crossing  
+  0.00000338463223670260% - Road narrows on the right  
+  
+Original Image:  Right-of-way at the next intersection  
+Predictions:  
+  0.97354954481124877930% - Right-of-way at the next intersection  
+  0.02588187716901302338% - Beware of ice/snow  
+  0.00051246094517409801% - Pedestrians  
+  0.00002032580778177362% - General caution  
+  0.00001693003468972165% - Double curve  
+  
+Original Image:  Keep right  
+Predictions:   
+  0.99699676036834716797% - Keep right  
+  0.00299559161067008972% - Go straight or left  
+  0.00000392966103390791% - General caution  
+  0.00000322310211231525% - Stop  
+  0.00000026217270487905% - No entry  
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
