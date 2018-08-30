@@ -121,7 +121,7 @@ If an iterative approach was chosen:
 *In current architecture I didn't see any issues but it was basically not enough for getting good enough percentage in accuracy. After doing some research and revisiting the courses I decided to use dropout right after the two fully connected layers and re-runned the training process. This way with grayscale, normalization and adding more data I got 94.9 percent of accuracy in validation set.*
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.  
-*I choosed to add two layers of dropout with 0.5 of keep probability which helped me to increase my validation data set percentage to 94.9 percent. *
+*I choosed to add two layers of dropout with 0.5 of keep probability which helped me to increase my validation data set percentage to 94.9 percent.*
 
 * Which parameters were tuned? How were they adjusted and why?  
 *I didn't adjust any parameters in my architecture.*
