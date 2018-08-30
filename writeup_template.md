@@ -127,7 +127,7 @@ If an iterative approach was chosen:
 *I didn't adjust any parameters in my architecture.*
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?  
-*Convolution layer works well with images, 3x3 or 5x5 filters do computations in small pieces of the image and keep sliding until it covers all of the image. this way our network can focus on details, edges, curves of the image and produce output regarding to this to be an input to our next layer.
+*Convolution layer works well with images, 3x3 or 5x5 filters do computations in small pieces of the image and keep sliding until it covers all of the image. this way our network can focus on details, edges, curves of the image and produce output regarding to this to be an input to our next layer.*
 
 *Dropout with 0.5 keep probability drops out half of the training set and may result our network to learn more robust features by letting it focus on random features this way in my case validation accuracy increased. In addition to this, dropout also prevents over-fitting.*
 
